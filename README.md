@@ -13,6 +13,9 @@ Add your firebase config to src/firebase.js and then do:
 - ![React](https://img.shields.io/badge/React-17.0.1-blue)
 - ![React-Bootstrap](https://img.shields.io/badge/React--Bootsrap-1.4.0-blue)
 
+**Deployment:**
+The App can be deployed using firebase hosting , I have deployed the app at this [link](https://chat-application-dcee2.web.app/)
+
 **References:**
 
 - https://www.youtube.com/watch?v=zQyrwxMPm88
