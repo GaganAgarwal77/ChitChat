@@ -1,0 +1,212 @@
+.room body {
+  background-color: #282c34;
+}
+
+.room {
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.room header {
+  background-color: #181717;
+  height: 7vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.room section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1); */
+}
+
+.room main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.room main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.room main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.room main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.room form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.room form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+
+.room input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.room button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.room button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.room .sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.room ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+.room p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+  text-align: center;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+  text-align: center;
+}
+
+/* img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+} */
+.custom {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px 0;
+  min-width: 20vw;
+  /* width: 25vw; */
+}
+/* Darker chat custom */
+.darker {
+  border-color: #ccc;
+  background-color: rgb(47, 30, 30);
+}
+
+/* Clear floats */
+.custom::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.custom img {
+  float: left;
+  max-width: 30px;
+  /* width: 100%; */
+  margin-right: 40px;
+  left: 0;
+  float: left!;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.custom img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: rgb(41, 34, 34);
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: rgb(59, 54, 54);
+}
