@@ -3,7 +3,7 @@
 A simple chat application built on firebase and react
 
 ## Running Instructions
-
+Add your firebase config to src/firebase.js and then do:
 - `npm install`
 - `yarn start` or `npm start`
 
